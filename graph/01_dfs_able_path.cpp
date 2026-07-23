@@ -29,6 +29,7 @@
 #include<iostream>
 #include<vector>
 using namespace std;
+
 void dfs(vector<vector<int>>& graph,int s,int t,vector<int>& path,vector<vector<int>>& result){
     for(int i=0;i<graph[s].size();i++){
         if(graph[s][i]==t){
