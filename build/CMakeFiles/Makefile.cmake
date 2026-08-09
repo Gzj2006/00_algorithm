@@ -55,4 +55,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/graph_01_dfs_able_path.dir/DependInfo.cmake"
   "CMakeFiles/02_island_problem_02_dfs_is_num.dir/DependInfo.cmake"
+  "CMakeFiles/02_island_problem_03_bfs_is_num.dir/DependInfo.cmake"
+  "CMakeFiles/02_island_problem_04_is_max.dir/DependInfo.cmake"
   )

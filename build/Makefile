@@ -142,6 +142,32 @@ graph_01_dfs_able_path/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\02_island_problem_02_dfs_is_num.dir\build.make CMakeFiles/02_island_problem_02_dfs_is_num.dir/build
 .PHONY : 02_island_problem_02_dfs_is_num/fast
 
+#=============================================================================
+# Target rules for targets named 02_island_problem_03_bfs_is_num
+
+# Build rule for target.
+02_island_problem_03_bfs_is_num: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 02_island_problem_03_bfs_is_num
+.PHONY : 02_island_problem_03_bfs_is_num
+
+# fast build rule for target.
+02_island_problem_03_bfs_is_num/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\02_island_problem_03_bfs_is_num.dir\build.make CMakeFiles/02_island_problem_03_bfs_is_num.dir/build
+.PHONY : 02_island_problem_03_bfs_is_num/fast
+
+#=============================================================================
+# Target rules for targets named 02_island_problem_04_is_max
+
+# Build rule for target.
+02_island_problem_04_is_max: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 02_island_problem_04_is_max
+.PHONY : 02_island_problem_04_is_max
+
+# fast build rule for target.
+02_island_problem_04_is_max/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\02_island_problem_04_is_max.dir\build.make CMakeFiles/02_island_problem_04_is_max.dir/build
+.PHONY : 02_island_problem_04_is_max/fast
+
 graph/01_dfs_able_path.obj: graph/01_dfs_able_path.cpp.obj
 .PHONY : graph/01_dfs_able_path.obj
 
@@ -190,6 +216,54 @@ graph/02_island_problem/02_dfs_is_num.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\02_island_problem_02_dfs_is_num.dir\build.make CMakeFiles/02_island_problem_02_dfs_is_num.dir/graph/02_island_problem/02_dfs_is_num.cpp.s
 .PHONY : graph/02_island_problem/02_dfs_is_num.cpp.s
 
+graph/02_island_problem/03_bfs_is_num.obj: graph/02_island_problem/03_bfs_is_num.cpp.obj
+.PHONY : graph/02_island_problem/03_bfs_is_num.obj
+
+# target to build an object file
+graph/02_island_problem/03_bfs_is_num.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\02_island_problem_03_bfs_is_num.dir\build.make CMakeFiles/02_island_problem_03_bfs_is_num.dir/graph/02_island_problem/03_bfs_is_num.cpp.obj
+.PHONY : graph/02_island_problem/03_bfs_is_num.cpp.obj
+
+graph/02_island_problem/03_bfs_is_num.i: graph/02_island_problem/03_bfs_is_num.cpp.i
+.PHONY : graph/02_island_problem/03_bfs_is_num.i
+
+# target to preprocess a source file
+graph/02_island_problem/03_bfs_is_num.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\02_island_problem_03_bfs_is_num.dir\build.make CMakeFiles/02_island_problem_03_bfs_is_num.dir/graph/02_island_problem/03_bfs_is_num.cpp.i
+.PHONY : graph/02_island_problem/03_bfs_is_num.cpp.i
+
+graph/02_island_problem/03_bfs_is_num.s: graph/02_island_problem/03_bfs_is_num.cpp.s
+.PHONY : graph/02_island_problem/03_bfs_is_num.s
+
+# target to generate assembly for a file
+graph/02_island_problem/03_bfs_is_num.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\02_island_problem_03_bfs_is_num.dir\build.make CMakeFiles/02_island_problem_03_bfs_is_num.dir/graph/02_island_problem/03_bfs_is_num.cpp.s
+.PHONY : graph/02_island_problem/03_bfs_is_num.cpp.s
+
+graph/02_island_problem/04_is_max.obj: graph/02_island_problem/04_is_max.cpp.obj
+.PHONY : graph/02_island_problem/04_is_max.obj
+
+# target to build an object file
+graph/02_island_problem/04_is_max.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\02_island_problem_04_is_max.dir\build.make CMakeFiles/02_island_problem_04_is_max.dir/graph/02_island_problem/04_is_max.cpp.obj
+.PHONY : graph/02_island_problem/04_is_max.cpp.obj
+
+graph/02_island_problem/04_is_max.i: graph/02_island_problem/04_is_max.cpp.i
+.PHONY : graph/02_island_problem/04_is_max.i
+
+# target to preprocess a source file
+graph/02_island_problem/04_is_max.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\02_island_problem_04_is_max.dir\build.make CMakeFiles/02_island_problem_04_is_max.dir/graph/02_island_problem/04_is_max.cpp.i
+.PHONY : graph/02_island_problem/04_is_max.cpp.i
+
+graph/02_island_problem/04_is_max.s: graph/02_island_problem/04_is_max.cpp.s
+.PHONY : graph/02_island_problem/04_is_max.s
+
+# target to generate assembly for a file
+graph/02_island_problem/04_is_max.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\02_island_problem_04_is_max.dir\build.make CMakeFiles/02_island_problem_04_is_max.dir/graph/02_island_problem/04_is_max.cpp.s
+.PHONY : graph/02_island_problem/04_is_max.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -199,6 +273,8 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... 02_island_problem_02_dfs_is_num
+	@echo ... 02_island_problem_03_bfs_is_num
+	@echo ... 02_island_problem_04_is_max
 	@echo ... graph_01_dfs_able_path
 	@echo ... graph/01_dfs_able_path.obj
 	@echo ... graph/01_dfs_able_path.i
@@ -206,6 +282,12 @@ help:
 	@echo ... graph/02_island_problem/02_dfs_is_num.obj
 	@echo ... graph/02_island_problem/02_dfs_is_num.i
 	@echo ... graph/02_island_problem/02_dfs_is_num.s
+	@echo ... graph/02_island_problem/03_bfs_is_num.obj
+	@echo ... graph/02_island_problem/03_bfs_is_num.i
+	@echo ... graph/02_island_problem/03_bfs_is_num.s
+	@echo ... graph/02_island_problem/04_is_max.obj
+	@echo ... graph/02_island_problem/04_is_max.i
+	@echo ... graph/02_island_problem/04_is_max.s
 .PHONY : help
 
 

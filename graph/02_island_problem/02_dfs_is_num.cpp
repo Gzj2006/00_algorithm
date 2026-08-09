@@ -33,7 +33,7 @@ void dfs(const vector<vector<int>>& isl,vector<vector<bool>>& visited,int x,int 
 
 int main(){
     int M,N;
-    cin>>M>>N;
+    cin>>N>>M;
     vector<vector<int>> isl(N,vector<int>(M,0));
     vector<vector<bool>>  visited(N,vector<bool>(M,false));
     for(int i=0;i<N;i++){
