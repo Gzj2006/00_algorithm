@@ -18,13 +18,15 @@
 using namespace std;
 
 int dir[4][2]={1,0,0,1,-1,0,0,-1};//四个方向遍历
-void dfs(const vector<vector<int>>& isl,vector<vector<bool>> visited,int x,int y)
+void dfs(const vector<vector<int>>& isl,vector<vector<bool>>& visited,int x,int y,int N,int M)
 {
     for(auto [dx,dy]:dir){
         int nx = x+dx,ny=y+dy;
+        // 越界检查：nx,ny 必须在矩阵范围内
+        if(nx<0||nx>=N||ny<0||ny>=M) continue;
         if(!visited[nx][ny]&&isl[nx][ny]==1){
-            visited[nx][ny]==true;
-            dfs(isl,visited,nx,ny);
+            visited[nx][ny]=true;
+            dfs(isl,visited,nx,ny,N,M);
         }
     }
 }
@@ -45,7 +47,8 @@ int main(){
         for(int j=0;j<M;j++){
             if(isl[i][j]==1&&!visited[i][j]){
                 result+=1;
-                dfs(isl,visited,i,j);
+                visited[i][j]=true;
+                dfs(isl,visited,i,j,N,M);
             }
         }
     }

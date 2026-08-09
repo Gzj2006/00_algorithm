@@ -1,0 +1,3 @@
+C:\msys64\ucrt64\bin\cmake.exe -E rm -f CMakeFiles\02_island_problem_02_dfs_is_num.dir/objects.a
+C:\msys64\ucrt64\bin\ar.exe qc CMakeFiles\02_island_problem_02_dfs_is_num.dir/objects.a @CMakeFiles\02_island_problem_02_dfs_is_num.dir\objects1.rsp
+C:\msys64\ucrt64\bin\c++.exe -g -Wl,--whole-archive CMakeFiles\02_island_problem_02_dfs_is_num.dir/objects.a -Wl,--no-whole-archive -o 02_island_problem_02_dfs_is_num.exe -Wl,--out-implib,lib02_island_problem_02_dfs_is_num.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\02_island_problem_02_dfs_is_num.dir\linkLibs.rsp
