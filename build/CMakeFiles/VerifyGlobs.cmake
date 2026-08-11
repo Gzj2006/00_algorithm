@@ -8,6 +8,7 @@ set(OLD_GLOB
   "D:/00_algorithm/graph/02_island_problem/02_dfs_is_num.cpp"
   "D:/00_algorithm/graph/02_island_problem/03_bfs_is_num.cpp"
   "D:/00_algorithm/graph/02_island_problem/04_is_max.cpp"
+  "D:/00_algorithm/graph/02_island_problem/05_is_allnum.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
