@@ -5,5 +5,7 @@ D:/00_algorithm/build/CMakeFiles/02_island_problem_04_is_max.dir
 D:/00_algorithm/build/CMakeFiles/02_island_problem_05_is_allnum.dir
 D:/00_algorithm/build/CMakeFiles/02_island_problem_06_2pass_is_allnum.dir
 D:/00_algorithm/build/CMakeFiles/02_island_problem_07_2pass_isl_drop.dir
+D:/00_algorithm/build/CMakeFiles/02_island_problem_08_pa_waterflow.dir
+D:/00_algorithm/build/CMakeFiles/02_island_problem_09_make_large_isl.dir
 D:/00_algorithm/build/CMakeFiles/edit_cache.dir
 D:/00_algorithm/build/CMakeFiles/rebuild_cache.dir
