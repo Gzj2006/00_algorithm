@@ -58,4 +58,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/02_island_problem_03_bfs_is_num.dir/DependInfo.cmake"
   "CMakeFiles/02_island_problem_04_is_max.dir/DependInfo.cmake"
   "CMakeFiles/02_island_problem_05_is_allnum.dir/DependInfo.cmake"
+  "CMakeFiles/02_island_problem_06_2pass_is_allnum.dir/DependInfo.cmake"
+  "CMakeFiles/02_island_problem_07_2pass_isl_drop.dir/DependInfo.cmake"
   )

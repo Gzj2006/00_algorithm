@@ -181,6 +181,32 @@ graph_01_dfs_able_path/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\02_island_problem_05_is_allnum.dir\build.make CMakeFiles/02_island_problem_05_is_allnum.dir/build
 .PHONY : 02_island_problem_05_is_allnum/fast
 
+#=============================================================================
+# Target rules for targets named 02_island_problem_06_2pass_is_allnum
+
+# Build rule for target.
+02_island_problem_06_2pass_is_allnum: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 02_island_problem_06_2pass_is_allnum
+.PHONY : 02_island_problem_06_2pass_is_allnum
+
+# fast build rule for target.
+02_island_problem_06_2pass_is_allnum/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\02_island_problem_06_2pass_is_allnum.dir\build.make CMakeFiles/02_island_problem_06_2pass_is_allnum.dir/build
+.PHONY : 02_island_problem_06_2pass_is_allnum/fast
+
+#=============================================================================
+# Target rules for targets named 02_island_problem_07_2pass_isl_drop
+
+# Build rule for target.
+02_island_problem_07_2pass_isl_drop: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 02_island_problem_07_2pass_isl_drop
+.PHONY : 02_island_problem_07_2pass_isl_drop
+
+# fast build rule for target.
+02_island_problem_07_2pass_isl_drop/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\02_island_problem_07_2pass_isl_drop.dir\build.make CMakeFiles/02_island_problem_07_2pass_isl_drop.dir/build
+.PHONY : 02_island_problem_07_2pass_isl_drop/fast
+
 graph/01_dfs_able_path.obj: graph/01_dfs_able_path.cpp.obj
 .PHONY : graph/01_dfs_able_path.obj
 
@@ -301,6 +327,54 @@ graph/02_island_problem/05_is_allnum.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\02_island_problem_05_is_allnum.dir\build.make CMakeFiles/02_island_problem_05_is_allnum.dir/graph/02_island_problem/05_is_allnum.cpp.s
 .PHONY : graph/02_island_problem/05_is_allnum.cpp.s
 
+graph/02_island_problem/06_2pass_is_allnum.obj: graph/02_island_problem/06_2pass_is_allnum.cpp.obj
+.PHONY : graph/02_island_problem/06_2pass_is_allnum.obj
+
+# target to build an object file
+graph/02_island_problem/06_2pass_is_allnum.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\02_island_problem_06_2pass_is_allnum.dir\build.make CMakeFiles/02_island_problem_06_2pass_is_allnum.dir/graph/02_island_problem/06_2pass_is_allnum.cpp.obj
+.PHONY : graph/02_island_problem/06_2pass_is_allnum.cpp.obj
+
+graph/02_island_problem/06_2pass_is_allnum.i: graph/02_island_problem/06_2pass_is_allnum.cpp.i
+.PHONY : graph/02_island_problem/06_2pass_is_allnum.i
+
+# target to preprocess a source file
+graph/02_island_problem/06_2pass_is_allnum.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\02_island_problem_06_2pass_is_allnum.dir\build.make CMakeFiles/02_island_problem_06_2pass_is_allnum.dir/graph/02_island_problem/06_2pass_is_allnum.cpp.i
+.PHONY : graph/02_island_problem/06_2pass_is_allnum.cpp.i
+
+graph/02_island_problem/06_2pass_is_allnum.s: graph/02_island_problem/06_2pass_is_allnum.cpp.s
+.PHONY : graph/02_island_problem/06_2pass_is_allnum.s
+
+# target to generate assembly for a file
+graph/02_island_problem/06_2pass_is_allnum.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\02_island_problem_06_2pass_is_allnum.dir\build.make CMakeFiles/02_island_problem_06_2pass_is_allnum.dir/graph/02_island_problem/06_2pass_is_allnum.cpp.s
+.PHONY : graph/02_island_problem/06_2pass_is_allnum.cpp.s
+
+graph/02_island_problem/07_2pass_isl_drop.obj: graph/02_island_problem/07_2pass_isl_drop.cpp.obj
+.PHONY : graph/02_island_problem/07_2pass_isl_drop.obj
+
+# target to build an object file
+graph/02_island_problem/07_2pass_isl_drop.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\02_island_problem_07_2pass_isl_drop.dir\build.make CMakeFiles/02_island_problem_07_2pass_isl_drop.dir/graph/02_island_problem/07_2pass_isl_drop.cpp.obj
+.PHONY : graph/02_island_problem/07_2pass_isl_drop.cpp.obj
+
+graph/02_island_problem/07_2pass_isl_drop.i: graph/02_island_problem/07_2pass_isl_drop.cpp.i
+.PHONY : graph/02_island_problem/07_2pass_isl_drop.i
+
+# target to preprocess a source file
+graph/02_island_problem/07_2pass_isl_drop.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\02_island_problem_07_2pass_isl_drop.dir\build.make CMakeFiles/02_island_problem_07_2pass_isl_drop.dir/graph/02_island_problem/07_2pass_isl_drop.cpp.i
+.PHONY : graph/02_island_problem/07_2pass_isl_drop.cpp.i
+
+graph/02_island_problem/07_2pass_isl_drop.s: graph/02_island_problem/07_2pass_isl_drop.cpp.s
+.PHONY : graph/02_island_problem/07_2pass_isl_drop.s
+
+# target to generate assembly for a file
+graph/02_island_problem/07_2pass_isl_drop.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\02_island_problem_07_2pass_isl_drop.dir\build.make CMakeFiles/02_island_problem_07_2pass_isl_drop.dir/graph/02_island_problem/07_2pass_isl_drop.cpp.s
+.PHONY : graph/02_island_problem/07_2pass_isl_drop.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -313,6 +387,8 @@ help:
 	@echo ... 02_island_problem_03_bfs_is_num
 	@echo ... 02_island_problem_04_is_max
 	@echo ... 02_island_problem_05_is_allnum
+	@echo ... 02_island_problem_06_2pass_is_allnum
+	@echo ... 02_island_problem_07_2pass_isl_drop
 	@echo ... graph_01_dfs_able_path
 	@echo ... graph/01_dfs_able_path.obj
 	@echo ... graph/01_dfs_able_path.i
@@ -329,6 +405,12 @@ help:
 	@echo ... graph/02_island_problem/05_is_allnum.obj
 	@echo ... graph/02_island_problem/05_is_allnum.i
 	@echo ... graph/02_island_problem/05_is_allnum.s
+	@echo ... graph/02_island_problem/06_2pass_is_allnum.obj
+	@echo ... graph/02_island_problem/06_2pass_is_allnum.i
+	@echo ... graph/02_island_problem/06_2pass_is_allnum.s
+	@echo ... graph/02_island_problem/07_2pass_isl_drop.obj
+	@echo ... graph/02_island_problem/07_2pass_isl_drop.i
+	@echo ... graph/02_island_problem/07_2pass_isl_drop.s
 .PHONY : help
 
 
