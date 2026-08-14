@@ -13,6 +13,7 @@ set(OLD_GLOB
   "D:/00_algorithm/graph/02_island_problem/07_2pass_isl_drop.cpp"
   "D:/00_algorithm/graph/02_island_problem/08_pa_waterflow.cpp"
   "D:/00_algorithm/graph/02_island_problem/09_make_large_isl.cpp"
+  "D:/00_algorithm/graph/02_island_problem/10_isl_pre.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")

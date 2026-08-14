@@ -71,6 +71,7 @@ all: CMakeFiles/02_island_problem_06_2pass_is_allnum.dir/all
 all: CMakeFiles/02_island_problem_07_2pass_isl_drop.dir/all
 all: CMakeFiles/02_island_problem_08_pa_waterflow.dir/all
 all: CMakeFiles/02_island_problem_09_make_large_isl.dir/all
+all: CMakeFiles/02_island_problem_10_isl_pre.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
@@ -83,6 +84,7 @@ codegen: CMakeFiles/02_island_problem_06_2pass_is_allnum.dir/codegen
 codegen: CMakeFiles/02_island_problem_07_2pass_isl_drop.dir/codegen
 codegen: CMakeFiles/02_island_problem_08_pa_waterflow.dir/codegen
 codegen: CMakeFiles/02_island_problem_09_make_large_isl.dir/codegen
+codegen: CMakeFiles/02_island_problem_10_isl_pre.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -99,6 +101,7 @@ clean: CMakeFiles/02_island_problem_06_2pass_is_allnum.dir/clean
 clean: CMakeFiles/02_island_problem_07_2pass_isl_drop.dir/clean
 clean: CMakeFiles/02_island_problem_08_pa_waterflow.dir/clean
 clean: CMakeFiles/02_island_problem_09_make_large_isl.dir/clean
+clean: CMakeFiles/02_island_problem_10_isl_pre.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -108,7 +111,7 @@ clean: CMakeFiles/02_island_problem_09_make_large_isl.dir/clean
 CMakeFiles/graph_01_dfs_able_path.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_01_dfs_able_path.dir\build.make CMakeFiles/graph_01_dfs_able_path.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_01_dfs_able_path.dir\build.make CMakeFiles/graph_01_dfs_able_path.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\00_algorithm\build\CMakeFiles --progress-num=17,18 "Built target graph_01_dfs_able_path"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\00_algorithm\build\CMakeFiles --progress-num=19,20 "Built target graph_01_dfs_able_path"
 .PHONY : CMakeFiles/graph_01_dfs_able_path.dir/all
 
 # Build rule for subdir invocation for target.
@@ -125,7 +128,7 @@ graph_01_dfs_able_path: CMakeFiles/graph_01_dfs_able_path.dir/rule
 # codegen rule for target.
 CMakeFiles/graph_01_dfs_able_path.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_01_dfs_able_path.dir\build.make CMakeFiles/graph_01_dfs_able_path.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\00_algorithm\build\CMakeFiles --progress-num=17,18 "Finished codegen for target graph_01_dfs_able_path"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\00_algorithm\build\CMakeFiles --progress-num=19,20 "Finished codegen for target graph_01_dfs_able_path"
 .PHONY : CMakeFiles/graph_01_dfs_able_path.dir/codegen
 
 # clean rule for target.
@@ -388,6 +391,38 @@ CMakeFiles/02_island_problem_09_make_large_isl.dir/codegen:
 CMakeFiles/02_island_problem_09_make_large_isl.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\02_island_problem_09_make_large_isl.dir\build.make CMakeFiles/02_island_problem_09_make_large_isl.dir/clean
 .PHONY : CMakeFiles/02_island_problem_09_make_large_isl.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/02_island_problem_10_isl_pre.dir
+
+# All Build rule for target.
+CMakeFiles/02_island_problem_10_isl_pre.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\02_island_problem_10_isl_pre.dir\build.make CMakeFiles/02_island_problem_10_isl_pre.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\02_island_problem_10_isl_pre.dir\build.make CMakeFiles/02_island_problem_10_isl_pre.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\00_algorithm\build\CMakeFiles --progress-num=17,18 "Built target 02_island_problem_10_isl_pre"
+.PHONY : CMakeFiles/02_island_problem_10_isl_pre.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/02_island_problem_10_isl_pre.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\00_algorithm\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/02_island_problem_10_isl_pre.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\00_algorithm\build\CMakeFiles 0
+.PHONY : CMakeFiles/02_island_problem_10_isl_pre.dir/rule
+
+# Convenience name for target.
+02_island_problem_10_isl_pre: CMakeFiles/02_island_problem_10_isl_pre.dir/rule
+.PHONY : 02_island_problem_10_isl_pre
+
+# codegen rule for target.
+CMakeFiles/02_island_problem_10_isl_pre.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\02_island_problem_10_isl_pre.dir\build.make CMakeFiles/02_island_problem_10_isl_pre.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\00_algorithm\build\CMakeFiles --progress-num=17,18 "Finished codegen for target 02_island_problem_10_isl_pre"
+.PHONY : CMakeFiles/02_island_problem_10_isl_pre.dir/codegen
+
+# clean rule for target.
+CMakeFiles/02_island_problem_10_isl_pre.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\02_island_problem_10_isl_pre.dir\build.make CMakeFiles/02_island_problem_10_isl_pre.dir/clean
+.PHONY : CMakeFiles/02_island_problem_10_isl_pre.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

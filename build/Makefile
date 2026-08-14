@@ -233,6 +233,19 @@ graph_01_dfs_able_path/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\02_island_problem_09_make_large_isl.dir\build.make CMakeFiles/02_island_problem_09_make_large_isl.dir/build
 .PHONY : 02_island_problem_09_make_large_isl/fast
 
+#=============================================================================
+# Target rules for targets named 02_island_problem_10_isl_pre
+
+# Build rule for target.
+02_island_problem_10_isl_pre: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 02_island_problem_10_isl_pre
+.PHONY : 02_island_problem_10_isl_pre
+
+# fast build rule for target.
+02_island_problem_10_isl_pre/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\02_island_problem_10_isl_pre.dir\build.make CMakeFiles/02_island_problem_10_isl_pre.dir/build
+.PHONY : 02_island_problem_10_isl_pre/fast
+
 graph/01_dfs_able_path.obj: graph/01_dfs_able_path.cpp.obj
 .PHONY : graph/01_dfs_able_path.obj
 
@@ -449,6 +462,30 @@ graph/02_island_problem/09_make_large_isl.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\02_island_problem_09_make_large_isl.dir\build.make CMakeFiles/02_island_problem_09_make_large_isl.dir/graph/02_island_problem/09_make_large_isl.cpp.s
 .PHONY : graph/02_island_problem/09_make_large_isl.cpp.s
 
+graph/02_island_problem/10_isl_pre.obj: graph/02_island_problem/10_isl_pre.cpp.obj
+.PHONY : graph/02_island_problem/10_isl_pre.obj
+
+# target to build an object file
+graph/02_island_problem/10_isl_pre.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\02_island_problem_10_isl_pre.dir\build.make CMakeFiles/02_island_problem_10_isl_pre.dir/graph/02_island_problem/10_isl_pre.cpp.obj
+.PHONY : graph/02_island_problem/10_isl_pre.cpp.obj
+
+graph/02_island_problem/10_isl_pre.i: graph/02_island_problem/10_isl_pre.cpp.i
+.PHONY : graph/02_island_problem/10_isl_pre.i
+
+# target to preprocess a source file
+graph/02_island_problem/10_isl_pre.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\02_island_problem_10_isl_pre.dir\build.make CMakeFiles/02_island_problem_10_isl_pre.dir/graph/02_island_problem/10_isl_pre.cpp.i
+.PHONY : graph/02_island_problem/10_isl_pre.cpp.i
+
+graph/02_island_problem/10_isl_pre.s: graph/02_island_problem/10_isl_pre.cpp.s
+.PHONY : graph/02_island_problem/10_isl_pre.s
+
+# target to generate assembly for a file
+graph/02_island_problem/10_isl_pre.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\02_island_problem_10_isl_pre.dir\build.make CMakeFiles/02_island_problem_10_isl_pre.dir/graph/02_island_problem/10_isl_pre.cpp.s
+.PHONY : graph/02_island_problem/10_isl_pre.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -465,6 +502,7 @@ help:
 	@echo ... 02_island_problem_07_2pass_isl_drop
 	@echo ... 02_island_problem_08_pa_waterflow
 	@echo ... 02_island_problem_09_make_large_isl
+	@echo ... 02_island_problem_10_isl_pre
 	@echo ... graph_01_dfs_able_path
 	@echo ... graph/01_dfs_able_path.obj
 	@echo ... graph/01_dfs_able_path.i
@@ -493,6 +531,9 @@ help:
 	@echo ... graph/02_island_problem/09_make_large_isl.obj
 	@echo ... graph/02_island_problem/09_make_large_isl.i
 	@echo ... graph/02_island_problem/09_make_large_isl.s
+	@echo ... graph/02_island_problem/10_isl_pre.obj
+	@echo ... graph/02_island_problem/10_isl_pre.i
+	@echo ... graph/02_island_problem/10_isl_pre.s
 .PHONY : help
 
 
