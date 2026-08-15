@@ -268,3 +268,152 @@ if (m[key])        // 危险！key 不存在时 m[key] 先插入一个默认值�
 | 只查不改、不要求排序、追求速度 | `unordered_map`（哈希，平均 O(1)） |
 
 > 口诀：**set 管去重，map 管键值；编号连续用 vector，键散有序才上 map。判断存在别用 `[]`，find/count 最稳。**
+
+---
+
+# unordered_set / unordered_map 知识点（哈希容器）
+
+> 底层是**哈希表**：元素/键**唯一**且**无序**，查找/插入/删除**平均 O(1)**。
+> 不需要"有序遍历"时优先用它们，比红黑树（set/map）快。
+
+## 一、unordered_set（无序集合，只存键）
+
+头文件：`#include <unordered_set>`。
+
+| 操作 | 写法 | 说明 |
+|------|------|------|
+| 声明 | `unordered_set<string> s;` | |
+| 插入 | `s.insert(x);` | 重复插入被**忽略** |
+| 删除 | `s.erase(x);` | |
+| 判断存在 | `s.count(x)` | 返回 0 或 1（最常用） |
+| 查找 | `s.find(x)` | `!= s.end()` 即找到 |
+| 大小/空 | `s.size()` / `s.empty()` | |
+| 遍历 | `for (auto x : s)` | **无序**，顺序不定 |
+| 清空 | `s.clear();` | |
+
+### 用容器初始化（单词接龙常用）
+
+```cpp
+vector<string> strList = {"hot", "dot", "dog", "lot", "log", "cog"};
+unordered_set<string> wordSet(strList.begin(), strList.end());  // 一行建好"字典"
+if (wordSet.count("dot")) cout << "在字典里\n";                 // 判存在 O(1)
+```
+
+### 核心用途：**判存在**（元素唯一、哈希查找快）
+
+```cpp
+unordered_set<string> visited;      // 判重：哪些词已入过队
+visited.insert(beginStr);
+if (!visited.count(nxt)) visited.insert(nxt);
+```
+
+## 二、unordered_map 与 map 的区别
+
+| 维度 | `map` | `unordered_map` |
+|------|-------|-----------------|
+| 底层结构 | 红黑树 | 哈希表 |
+| 是否有序 | **有序**（按键升序） | **无序** |
+| 查找/插入/删除 | O(log n) | 平均 O(1)，最坏 O(n)（哈希冲突多时） |
+| 内存 | 较小 | 较大（桶数组 + 节点） |
+| 迭代器 | 插入/删除不失效 | 扩容/rehash 时可能失效 |
+| 可用键类型 | 支持 `<` 比较即可 | 需有 `hash<Key>`（自定义类型需自己写） |
+
+> 类比：`map` 像按字母排好序的字典（慢但有序）；`unordered_map` 像按下标直接翻页（快但无序）。
+> ⚠️ 竞赛担心被卡哈希时，可用 `map`（O(log n) 稳定）替代。
+
+## 三、怎么选"字典"数据类型
+
+| 需求 | 推荐 |
+|------|------|
+| 只判断"某词/某键**在不在**"（只要键不要值） | `unordered_set` |
+| 需要"键 → 值"（如 词 → 步数）且不要求排序 | `unordered_map` |
+| 需要按键**排序**遍历 | `map` / `set` |
+| 键是连续整数 | `vector`（最快） |
+
+> 口诀：**判存在用 unordered_set，键值对应上 unordered_map；不排序追求速度就上哈希，要排序才用红黑树。**
+
+---
+
+# 单词接龙（Word Ladder）——不必建邻接矩阵
+
+## 题目要点
+
+- 从 `beginStr` 到 `endStr` 的转换序列，每次只能改**一个字符**
+- 中间词必须都在字典 `strList` 中；`beginStr`/`endStr` 不在字典里
+- 输出**最短转换序列中的字符串数量**，不存在输出 0
+- 求最短 → 用 **BFS**
+
+## 一、为什么不必建邻接矩阵
+
+- **建图思路**：两两比较字典中的词，是否只差一个字符 → 建 $N\times N$ 邻接矩阵，再 BFS
+  - 建图复杂度 $O(N^2 \cdot L)$，空间 $O(N^2)$ —— N 大时内存、时间都爆炸
+- **推荐思路（枚举 + 哈希）**：BFS 出队时**现场判断**相邻，不提前建图
+  - 对当前词的每个位置，替换成 26 个字母，判断替换结果是否在 `unordered_set` 字典里
+  - 每个节点 $O(26\cdot L)$，共 $O(N \cdot 26 \cdot L) \approx O(N\cdot L)$，且省内存
+
+```cpp
+unordered_set<string> wordSet(strList.begin(), strList.end());
+queue<string> q;  q.push(beginStr);
+unordered_set<string> visited;  visited.insert(beginStr);
+
+// 扩展一个节点：
+for (int i = 0; i < cur.size(); ++i)
+    for (char c = 'a'; c <= 'z'; ++c) {
+        string nxt = cur;  nxt[i] = c;
+        if (wordSet.count(nxt) && !visited.count(nxt)) {
+            visited.insert(nxt);
+            q.push(nxt);
+        }
+    }
+```
+
+> 更优：**通配符分组**（把每词挖掉一位作 key，如 `*ot`、`h*t`、`ho*`）可建邻接表，$O(N\cdot L)$，便于双向 BFS。
+
+## 二、BFS 如何标记"当前第几步"
+
+### 方法 1：队列里直接存步数（最直观）
+
+```cpp
+queue<pair<string,int>> q;
+q.push({beginStr, 1});                       // 起始为 1（序列含起点）
+while (!q.empty()) {
+    auto [cur, step] = q.front(); q.pop();
+    if (cur == endStr) { cout << step; return 0; }
+    // ...扩展 nxt...
+    q.push({nxt, step + 1});
+}
+```
+
+### 方法 2：unordered_map 记录距离（vis 兼当 dist）
+
+```cpp
+unordered_map<string,int> dist;
+dist[beginStr] = 1;
+// ...
+if (wordSet.count(nxt) && !dist.count(nxt)) {
+    dist[nxt] = dist[cur] + 1;
+    q.push(nxt);
+}
+// 输出 dist[endStr]（不存在为 0）
+```
+
+### 方法 3：分层 BFS（同层共享一个步数）
+
+```cpp
+int step = 1;
+while (!q.empty()) {
+    int sz = q.size();
+    while (sz--) { if (front == endStr) { cout << step; return 0; } /* 扩展 */ }
+    ++step;
+}
+```
+
+| 方法 | 特点 |
+|------|------|
+| 队列存 step | 直观，但每节点多存一个 int |
+| dist map | 距离与判重合一，方便输出 |
+| 分层 BFS | 适合统计"走了几层" |
+
+> ⚠️ 输出的是**序列中字符串数量**，所以起点步数从 **1** 开始（不是 0）。
+
+> 口诀：**求最短用 BFS；相邻判断枚举+哈希不建图；步数要么入队要么记 dist、要么按层数。**

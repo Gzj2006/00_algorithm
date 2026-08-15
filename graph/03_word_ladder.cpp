@@ -21,3 +21,49 @@ beginStr 和 endStr 不在 字典 strList 中
 相比「两两比较建图」的 O(N^2*L)，当 N 较大时优势明显；且无需预先建图，省内存。
 */
 
+#include<iostream>
+#include<vector>
+#include<queue>
+#include<unordered_map>
+#include<unordered_set>
+using namespace std;
+
+int main(){
+    string beStr,enStr,cStr;
+    int N;
+    unordered_set<string> dict,visited;
+    cin>>N;
+    cin>>beStr>>enStr;
+    if(beStr==enStr){
+        cout<<1;
+        return 0;
+    }
+    for(int i=0;i<N;i++){
+        cin>>cStr;
+        dict.insert(cStr);
+    }
+
+    queue<pair<string,int>> que;
+    que.push({beStr,1});
+    visited.insert(beStr);
+    while(!que.empty()){
+        auto[cur,step]=que.front();
+        que.pop();
+        for(size_t i=0;i<cur.size();i++){
+            for(char c='a';c <= 'z';c++){
+                string nxt=cur;
+                nxt[i]=c;
+                if(nxt==cur) continue;
+                if(nxt==enStr){
+                    cout<<step+1;
+                    return 0;
+                }
+                if(dict.count(nxt)&&!visited.count(nxt)){
+                    que.push({nxt,step+1});
+                    visited.insert(nxt);
+                }
+            }
+        }
+    }
+    cout<<0;
+}
