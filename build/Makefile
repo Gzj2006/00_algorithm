@@ -272,6 +272,19 @@ graph_04_full_connect/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_04_full_connect.dir\build.make CMakeFiles/graph_04_full_connect.dir/build
 .PHONY : graph_04_full_connect/fast
 
+#=============================================================================
+# Target rules for targets named graph_05_uf_able_path
+
+# Build rule for target.
+graph_05_uf_able_path: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 graph_05_uf_able_path
+.PHONY : graph_05_uf_able_path
+
+# fast build rule for target.
+graph_05_uf_able_path/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_05_uf_able_path.dir\build.make CMakeFiles/graph_05_uf_able_path.dir/build
+.PHONY : graph_05_uf_able_path/fast
+
 graph/01_dfs_able_path.obj: graph/01_dfs_able_path.cpp.obj
 .PHONY : graph/01_dfs_able_path.obj
 
@@ -560,6 +573,30 @@ graph/04_full_connect.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_04_full_connect.dir\build.make CMakeFiles/graph_04_full_connect.dir/graph/04_full_connect.cpp.s
 .PHONY : graph/04_full_connect.cpp.s
 
+graph/05_uf_able_path.obj: graph/05_uf_able_path.cpp.obj
+.PHONY : graph/05_uf_able_path.obj
+
+# target to build an object file
+graph/05_uf_able_path.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_05_uf_able_path.dir\build.make CMakeFiles/graph_05_uf_able_path.dir/graph/05_uf_able_path.cpp.obj
+.PHONY : graph/05_uf_able_path.cpp.obj
+
+graph/05_uf_able_path.i: graph/05_uf_able_path.cpp.i
+.PHONY : graph/05_uf_able_path.i
+
+# target to preprocess a source file
+graph/05_uf_able_path.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_05_uf_able_path.dir\build.make CMakeFiles/graph_05_uf_able_path.dir/graph/05_uf_able_path.cpp.i
+.PHONY : graph/05_uf_able_path.cpp.i
+
+graph/05_uf_able_path.s: graph/05_uf_able_path.cpp.s
+.PHONY : graph/05_uf_able_path.s
+
+# target to generate assembly for a file
+graph/05_uf_able_path.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_05_uf_able_path.dir\build.make CMakeFiles/graph_05_uf_able_path.dir/graph/05_uf_able_path.cpp.s
+.PHONY : graph/05_uf_able_path.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -580,6 +617,7 @@ help:
 	@echo ... graph_01_dfs_able_path
 	@echo ... graph_03_word_ladder
 	@echo ... graph_04_full_connect
+	@echo ... graph_05_uf_able_path
 	@echo ... graph/01_dfs_able_path.obj
 	@echo ... graph/01_dfs_able_path.i
 	@echo ... graph/01_dfs_able_path.s
@@ -616,6 +654,9 @@ help:
 	@echo ... graph/04_full_connect.obj
 	@echo ... graph/04_full_connect.i
 	@echo ... graph/04_full_connect.s
+	@echo ... graph/05_uf_able_path.obj
+	@echo ... graph/05_uf_able_path.i
+	@echo ... graph/05_uf_able_path.s
 .PHONY : help
 
 

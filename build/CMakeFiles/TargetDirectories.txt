@@ -10,5 +10,6 @@ D:/00_algorithm/build/CMakeFiles/02_island_problem_09_make_large_isl.dir
 D:/00_algorithm/build/CMakeFiles/02_island_problem_10_isl_pre.dir
 D:/00_algorithm/build/CMakeFiles/graph_03_word_ladder.dir
 D:/00_algorithm/build/CMakeFiles/graph_04_full_connect.dir
+D:/00_algorithm/build/CMakeFiles/graph_05_uf_able_path.dir
 D:/00_algorithm/build/CMakeFiles/edit_cache.dir
 D:/00_algorithm/build/CMakeFiles/rebuild_cache.dir
