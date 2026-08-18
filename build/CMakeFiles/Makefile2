@@ -75,6 +75,9 @@ all: CMakeFiles/02_island_problem_10_isl_pre.dir/all
 all: CMakeFiles/graph_03_word_ladder.dir/all
 all: CMakeFiles/graph_04_full_connect.dir/all
 all: CMakeFiles/graph_05_uf_able_path.dir/all
+all: CMakeFiles/graph_06_uf_redundant_edge.dir/all
+all: CMakeFiles/graph_07_uf_dir_redundant_edge.dir/all
+all: CMakeFiles/graph_08_creTree_prim.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
@@ -91,6 +94,9 @@ codegen: CMakeFiles/02_island_problem_10_isl_pre.dir/codegen
 codegen: CMakeFiles/graph_03_word_ladder.dir/codegen
 codegen: CMakeFiles/graph_04_full_connect.dir/codegen
 codegen: CMakeFiles/graph_05_uf_able_path.dir/codegen
+codegen: CMakeFiles/graph_06_uf_redundant_edge.dir/codegen
+codegen: CMakeFiles/graph_07_uf_dir_redundant_edge.dir/codegen
+codegen: CMakeFiles/graph_08_creTree_prim.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -111,6 +117,9 @@ clean: CMakeFiles/02_island_problem_10_isl_pre.dir/clean
 clean: CMakeFiles/graph_03_word_ladder.dir/clean
 clean: CMakeFiles/graph_04_full_connect.dir/clean
 clean: CMakeFiles/graph_05_uf_able_path.dir/clean
+clean: CMakeFiles/graph_06_uf_redundant_edge.dir/clean
+clean: CMakeFiles/graph_07_uf_dir_redundant_edge.dir/clean
+clean: CMakeFiles/graph_08_creTree_prim.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -528,6 +537,102 @@ CMakeFiles/graph_05_uf_able_path.dir/codegen:
 CMakeFiles/graph_05_uf_able_path.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_05_uf_able_path.dir\build.make CMakeFiles/graph_05_uf_able_path.dir/clean
 .PHONY : CMakeFiles/graph_05_uf_able_path.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/graph_06_uf_redundant_edge.dir
+
+# All Build rule for target.
+CMakeFiles/graph_06_uf_redundant_edge.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_06_uf_redundant_edge.dir\build.make CMakeFiles/graph_06_uf_redundant_edge.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_06_uf_redundant_edge.dir\build.make CMakeFiles/graph_06_uf_redundant_edge.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\00_algorithm\build\CMakeFiles --progress-num=27,28 "Built target graph_06_uf_redundant_edge"
+.PHONY : CMakeFiles/graph_06_uf_redundant_edge.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/graph_06_uf_redundant_edge.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\00_algorithm\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/graph_06_uf_redundant_edge.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\00_algorithm\build\CMakeFiles 0
+.PHONY : CMakeFiles/graph_06_uf_redundant_edge.dir/rule
+
+# Convenience name for target.
+graph_06_uf_redundant_edge: CMakeFiles/graph_06_uf_redundant_edge.dir/rule
+.PHONY : graph_06_uf_redundant_edge
+
+# codegen rule for target.
+CMakeFiles/graph_06_uf_redundant_edge.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_06_uf_redundant_edge.dir\build.make CMakeFiles/graph_06_uf_redundant_edge.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\00_algorithm\build\CMakeFiles --progress-num=27,28 "Finished codegen for target graph_06_uf_redundant_edge"
+.PHONY : CMakeFiles/graph_06_uf_redundant_edge.dir/codegen
+
+# clean rule for target.
+CMakeFiles/graph_06_uf_redundant_edge.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_06_uf_redundant_edge.dir\build.make CMakeFiles/graph_06_uf_redundant_edge.dir/clean
+.PHONY : CMakeFiles/graph_06_uf_redundant_edge.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/graph_07_uf_dir_redundant_edge.dir
+
+# All Build rule for target.
+CMakeFiles/graph_07_uf_dir_redundant_edge.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_07_uf_dir_redundant_edge.dir\build.make CMakeFiles/graph_07_uf_dir_redundant_edge.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_07_uf_dir_redundant_edge.dir\build.make CMakeFiles/graph_07_uf_dir_redundant_edge.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\00_algorithm\build\CMakeFiles --progress-num=29,30 "Built target graph_07_uf_dir_redundant_edge"
+.PHONY : CMakeFiles/graph_07_uf_dir_redundant_edge.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/graph_07_uf_dir_redundant_edge.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\00_algorithm\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/graph_07_uf_dir_redundant_edge.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\00_algorithm\build\CMakeFiles 0
+.PHONY : CMakeFiles/graph_07_uf_dir_redundant_edge.dir/rule
+
+# Convenience name for target.
+graph_07_uf_dir_redundant_edge: CMakeFiles/graph_07_uf_dir_redundant_edge.dir/rule
+.PHONY : graph_07_uf_dir_redundant_edge
+
+# codegen rule for target.
+CMakeFiles/graph_07_uf_dir_redundant_edge.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_07_uf_dir_redundant_edge.dir\build.make CMakeFiles/graph_07_uf_dir_redundant_edge.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\00_algorithm\build\CMakeFiles --progress-num=29,30 "Finished codegen for target graph_07_uf_dir_redundant_edge"
+.PHONY : CMakeFiles/graph_07_uf_dir_redundant_edge.dir/codegen
+
+# clean rule for target.
+CMakeFiles/graph_07_uf_dir_redundant_edge.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_07_uf_dir_redundant_edge.dir\build.make CMakeFiles/graph_07_uf_dir_redundant_edge.dir/clean
+.PHONY : CMakeFiles/graph_07_uf_dir_redundant_edge.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/graph_08_creTree_prim.dir
+
+# All Build rule for target.
+CMakeFiles/graph_08_creTree_prim.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_08_creTree_prim.dir\build.make CMakeFiles/graph_08_creTree_prim.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_08_creTree_prim.dir\build.make CMakeFiles/graph_08_creTree_prim.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\00_algorithm\build\CMakeFiles --progress-num=31,32 "Built target graph_08_creTree_prim"
+.PHONY : CMakeFiles/graph_08_creTree_prim.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/graph_08_creTree_prim.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\00_algorithm\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/graph_08_creTree_prim.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\00_algorithm\build\CMakeFiles 0
+.PHONY : CMakeFiles/graph_08_creTree_prim.dir/rule
+
+# Convenience name for target.
+graph_08_creTree_prim: CMakeFiles/graph_08_creTree_prim.dir/rule
+.PHONY : graph_08_creTree_prim
+
+# codegen rule for target.
+CMakeFiles/graph_08_creTree_prim.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_08_creTree_prim.dir\build.make CMakeFiles/graph_08_creTree_prim.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\00_algorithm\build\CMakeFiles --progress-num=31,32 "Finished codegen for target graph_08_creTree_prim"
+.PHONY : CMakeFiles/graph_08_creTree_prim.dir/codegen
+
+# clean rule for target.
+CMakeFiles/graph_08_creTree_prim.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_08_creTree_prim.dir\build.make CMakeFiles/graph_08_creTree_prim.dir/clean
+.PHONY : CMakeFiles/graph_08_creTree_prim.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

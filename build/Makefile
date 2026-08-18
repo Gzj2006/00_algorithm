@@ -285,6 +285,45 @@ graph_05_uf_able_path/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_05_uf_able_path.dir\build.make CMakeFiles/graph_05_uf_able_path.dir/build
 .PHONY : graph_05_uf_able_path/fast
 
+#=============================================================================
+# Target rules for targets named graph_06_uf_redundant_edge
+
+# Build rule for target.
+graph_06_uf_redundant_edge: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 graph_06_uf_redundant_edge
+.PHONY : graph_06_uf_redundant_edge
+
+# fast build rule for target.
+graph_06_uf_redundant_edge/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_06_uf_redundant_edge.dir\build.make CMakeFiles/graph_06_uf_redundant_edge.dir/build
+.PHONY : graph_06_uf_redundant_edge/fast
+
+#=============================================================================
+# Target rules for targets named graph_07_uf_dir_redundant_edge
+
+# Build rule for target.
+graph_07_uf_dir_redundant_edge: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 graph_07_uf_dir_redundant_edge
+.PHONY : graph_07_uf_dir_redundant_edge
+
+# fast build rule for target.
+graph_07_uf_dir_redundant_edge/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_07_uf_dir_redundant_edge.dir\build.make CMakeFiles/graph_07_uf_dir_redundant_edge.dir/build
+.PHONY : graph_07_uf_dir_redundant_edge/fast
+
+#=============================================================================
+# Target rules for targets named graph_08_creTree_prim
+
+# Build rule for target.
+graph_08_creTree_prim: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 graph_08_creTree_prim
+.PHONY : graph_08_creTree_prim
+
+# fast build rule for target.
+graph_08_creTree_prim/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_08_creTree_prim.dir\build.make CMakeFiles/graph_08_creTree_prim.dir/build
+.PHONY : graph_08_creTree_prim/fast
+
 graph/01_dfs_able_path.obj: graph/01_dfs_able_path.cpp.obj
 .PHONY : graph/01_dfs_able_path.obj
 
@@ -597,6 +636,78 @@ graph/05_uf_able_path.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_05_uf_able_path.dir\build.make CMakeFiles/graph_05_uf_able_path.dir/graph/05_uf_able_path.cpp.s
 .PHONY : graph/05_uf_able_path.cpp.s
 
+graph/06_uf_redundant_edge.obj: graph/06_uf_redundant_edge.cpp.obj
+.PHONY : graph/06_uf_redundant_edge.obj
+
+# target to build an object file
+graph/06_uf_redundant_edge.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_06_uf_redundant_edge.dir\build.make CMakeFiles/graph_06_uf_redundant_edge.dir/graph/06_uf_redundant_edge.cpp.obj
+.PHONY : graph/06_uf_redundant_edge.cpp.obj
+
+graph/06_uf_redundant_edge.i: graph/06_uf_redundant_edge.cpp.i
+.PHONY : graph/06_uf_redundant_edge.i
+
+# target to preprocess a source file
+graph/06_uf_redundant_edge.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_06_uf_redundant_edge.dir\build.make CMakeFiles/graph_06_uf_redundant_edge.dir/graph/06_uf_redundant_edge.cpp.i
+.PHONY : graph/06_uf_redundant_edge.cpp.i
+
+graph/06_uf_redundant_edge.s: graph/06_uf_redundant_edge.cpp.s
+.PHONY : graph/06_uf_redundant_edge.s
+
+# target to generate assembly for a file
+graph/06_uf_redundant_edge.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_06_uf_redundant_edge.dir\build.make CMakeFiles/graph_06_uf_redundant_edge.dir/graph/06_uf_redundant_edge.cpp.s
+.PHONY : graph/06_uf_redundant_edge.cpp.s
+
+graph/07_uf_dir_redundant_edge.obj: graph/07_uf_dir_redundant_edge.cpp.obj
+.PHONY : graph/07_uf_dir_redundant_edge.obj
+
+# target to build an object file
+graph/07_uf_dir_redundant_edge.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_07_uf_dir_redundant_edge.dir\build.make CMakeFiles/graph_07_uf_dir_redundant_edge.dir/graph/07_uf_dir_redundant_edge.cpp.obj
+.PHONY : graph/07_uf_dir_redundant_edge.cpp.obj
+
+graph/07_uf_dir_redundant_edge.i: graph/07_uf_dir_redundant_edge.cpp.i
+.PHONY : graph/07_uf_dir_redundant_edge.i
+
+# target to preprocess a source file
+graph/07_uf_dir_redundant_edge.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_07_uf_dir_redundant_edge.dir\build.make CMakeFiles/graph_07_uf_dir_redundant_edge.dir/graph/07_uf_dir_redundant_edge.cpp.i
+.PHONY : graph/07_uf_dir_redundant_edge.cpp.i
+
+graph/07_uf_dir_redundant_edge.s: graph/07_uf_dir_redundant_edge.cpp.s
+.PHONY : graph/07_uf_dir_redundant_edge.s
+
+# target to generate assembly for a file
+graph/07_uf_dir_redundant_edge.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_07_uf_dir_redundant_edge.dir\build.make CMakeFiles/graph_07_uf_dir_redundant_edge.dir/graph/07_uf_dir_redundant_edge.cpp.s
+.PHONY : graph/07_uf_dir_redundant_edge.cpp.s
+
+graph/08_creTree_prim.obj: graph/08_creTree_prim.cpp.obj
+.PHONY : graph/08_creTree_prim.obj
+
+# target to build an object file
+graph/08_creTree_prim.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_08_creTree_prim.dir\build.make CMakeFiles/graph_08_creTree_prim.dir/graph/08_creTree_prim.cpp.obj
+.PHONY : graph/08_creTree_prim.cpp.obj
+
+graph/08_creTree_prim.i: graph/08_creTree_prim.cpp.i
+.PHONY : graph/08_creTree_prim.i
+
+# target to preprocess a source file
+graph/08_creTree_prim.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_08_creTree_prim.dir\build.make CMakeFiles/graph_08_creTree_prim.dir/graph/08_creTree_prim.cpp.i
+.PHONY : graph/08_creTree_prim.cpp.i
+
+graph/08_creTree_prim.s: graph/08_creTree_prim.cpp.s
+.PHONY : graph/08_creTree_prim.s
+
+# target to generate assembly for a file
+graph/08_creTree_prim.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_08_creTree_prim.dir\build.make CMakeFiles/graph_08_creTree_prim.dir/graph/08_creTree_prim.cpp.s
+.PHONY : graph/08_creTree_prim.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -618,6 +729,9 @@ help:
 	@echo ... graph_03_word_ladder
 	@echo ... graph_04_full_connect
 	@echo ... graph_05_uf_able_path
+	@echo ... graph_06_uf_redundant_edge
+	@echo ... graph_07_uf_dir_redundant_edge
+	@echo ... graph_08_creTree_prim
 	@echo ... graph/01_dfs_able_path.obj
 	@echo ... graph/01_dfs_able_path.i
 	@echo ... graph/01_dfs_able_path.s
@@ -657,6 +771,15 @@ help:
 	@echo ... graph/05_uf_able_path.obj
 	@echo ... graph/05_uf_able_path.i
 	@echo ... graph/05_uf_able_path.s
+	@echo ... graph/06_uf_redundant_edge.obj
+	@echo ... graph/06_uf_redundant_edge.i
+	@echo ... graph/06_uf_redundant_edge.s
+	@echo ... graph/07_uf_dir_redundant_edge.obj
+	@echo ... graph/07_uf_dir_redundant_edge.i
+	@echo ... graph/07_uf_dir_redundant_edge.s
+	@echo ... graph/08_creTree_prim.obj
+	@echo ... graph/08_creTree_prim.i
+	@echo ... graph/08_creTree_prim.s
 .PHONY : help
 
 
