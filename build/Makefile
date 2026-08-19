@@ -324,6 +324,19 @@ graph_08_creTree_prim/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_08_creTree_prim.dir\build.make CMakeFiles/graph_08_creTree_prim.dir/build
 .PHONY : graph_08_creTree_prim/fast
 
+#=============================================================================
+# Target rules for targets named graph_09_kruskal
+
+# Build rule for target.
+graph_09_kruskal: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 graph_09_kruskal
+.PHONY : graph_09_kruskal
+
+# fast build rule for target.
+graph_09_kruskal/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_09_kruskal.dir\build.make CMakeFiles/graph_09_kruskal.dir/build
+.PHONY : graph_09_kruskal/fast
+
 graph/01_dfs_able_path.obj: graph/01_dfs_able_path.cpp.obj
 .PHONY : graph/01_dfs_able_path.obj
 
@@ -708,6 +721,30 @@ graph/08_creTree_prim.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_08_creTree_prim.dir\build.make CMakeFiles/graph_08_creTree_prim.dir/graph/08_creTree_prim.cpp.s
 .PHONY : graph/08_creTree_prim.cpp.s
 
+graph/09_kruskal.obj: graph/09_kruskal.cpp.obj
+.PHONY : graph/09_kruskal.obj
+
+# target to build an object file
+graph/09_kruskal.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_09_kruskal.dir\build.make CMakeFiles/graph_09_kruskal.dir/graph/09_kruskal.cpp.obj
+.PHONY : graph/09_kruskal.cpp.obj
+
+graph/09_kruskal.i: graph/09_kruskal.cpp.i
+.PHONY : graph/09_kruskal.i
+
+# target to preprocess a source file
+graph/09_kruskal.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_09_kruskal.dir\build.make CMakeFiles/graph_09_kruskal.dir/graph/09_kruskal.cpp.i
+.PHONY : graph/09_kruskal.cpp.i
+
+graph/09_kruskal.s: graph/09_kruskal.cpp.s
+.PHONY : graph/09_kruskal.s
+
+# target to generate assembly for a file
+graph/09_kruskal.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_09_kruskal.dir\build.make CMakeFiles/graph_09_kruskal.dir/graph/09_kruskal.cpp.s
+.PHONY : graph/09_kruskal.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -732,6 +769,7 @@ help:
 	@echo ... graph_06_uf_redundant_edge
 	@echo ... graph_07_uf_dir_redundant_edge
 	@echo ... graph_08_creTree_prim
+	@echo ... graph_09_kruskal
 	@echo ... graph/01_dfs_able_path.obj
 	@echo ... graph/01_dfs_able_path.i
 	@echo ... graph/01_dfs_able_path.s
@@ -780,6 +818,9 @@ help:
 	@echo ... graph/08_creTree_prim.obj
 	@echo ... graph/08_creTree_prim.i
 	@echo ... graph/08_creTree_prim.s
+	@echo ... graph/09_kruskal.obj
+	@echo ... graph/09_kruskal.i
+	@echo ... graph/09_kruskal.s
 .PHONY : help
 
 

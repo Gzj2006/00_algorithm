@@ -417,3 +417,111 @@ while (!q.empty()) {
 > ⚠️ 输出的是**序列中字符串数量**，所以起点步数从 **1** 开始（不是 0）。
 
 > 口诀：**求最短用 BFS；相邻判断枚举+哈希不建图；步数要么入队要么记 dist、要么按层数。**
+
+---
+
+# Kruskal（克鲁斯卡尔）算法——求最小生成树
+
+## 一、核心思路
+
+把**所有边按权值从小到大排序**，然后**按顺序依次遍历**，用并查集判断：这条边两端是否已连通。
+
+- 不连通 → 加入这条边（`join`），累加权值
+- 已连通 → 跳过（会成环）
+- 直到选够 $V-1$ 条边，即得到最小生成树
+
+```
+边按权值排序 ──▶ 从最小开始一条条试 ──▶ 不成环就收下
+```
+
+## 二、回答：Kruskal 是"用遍历求最小边"吗？
+
+**不是。** 标准 Kruskal 不靠"每轮遍历找当前最小边"，而是**先一次性排序**，再顺序遍历一遍。
+
+| 写法 | 怎么找最小边 | 复杂度 |
+|------|------------|--------|
+| 标准 Kruskal | 先排序，再顺序遍历 | $O(E\log E)$ |
+| 朴素版（每轮遍历） | 每轮用 $O(E)$ 扫一遍找当前最小 | $O(V\cdot E)$ |
+
+> 朴素版"每次遍历找最小"**结果也对**（有点像 Prim 的思想），但多乘一个 $V$，边多时明显慢，一般不用。
+
+## 三、完整模板（并查集 + 排序）
+
+```cpp
+struct edge { int u, v, val; };
+
+// ① 读入后把边按权值升序排序
+sort(edges.begin(), edges.end(), [](edge a, edge b){ return a.val < b.val; });
+
+// ② 并查集初始化
+father.resize(n + 1);
+for (int i = 1; i <= n; i++) father[i] = i;
+
+// ③ 顺序遍历选边
+int result = 0, cnt = 0;
+for (auto &e : edges) {
+    if (!isSame(e.u, e.v)) {   // 不成环
+        join(e.u, e.v);
+        result += e.val;
+        if (++cnt == n - 1) break;   // 选够 n-1 条就结束
+    }
+}
+cout << result << '\n';
+```
+
+> 口诀：**Kruskal 排序选边，并查集判环；Prim 加点，Kruskal 加边。选够 n-1 条即完工。**
+
+---
+
+# sort 函数用法
+
+## 一、基本形式
+
+```cpp
+sort(首迭代器, 尾迭代器, 比较规则);
+```
+
+- 前两个参数是**排序范围**（左闭右开，`begin()` 到 `end()` 排全部）
+- 第三个参数**可省略**，省略时默认从小到大（用 `<` 比较）
+- 头文件：`#include <algorithm>`
+
+## 二、对 `vector<edge>` 按 `val` 排序（Kruskal 场景）
+
+**写法 1：自定义比较函数**
+
+```cpp
+bool cmp(edge a, edge b) { return a.val < b.val; }
+sort(edges.begin(), edges.end(), cmp);
+```
+
+**写法 2：lambda 表达式（推荐，就近写）**
+
+```cpp
+sort(edges.begin(), edges.end(), [](edge a, edge b){
+    return a.val < b.val;
+});
+```
+
+**写法 3：重载 `<` 运算符（连第三个参数都不用传）**
+
+```cpp
+struct edge {
+    int u, v, val;
+    bool operator<(const edge &other) const {
+        return val < other.val;
+    }
+};
+sort(edges.begin(), edges.end());   // 直接用默认
+```
+
+## 三、关键点
+
+| 要点 | 说明 |
+|------|------|
+| 比较规则 | 返回 `true` 表示 **a 应排在 b 前面**。升序写 `<`，降序写 `>` |
+| `const &` | 用 `const edge &a` 传引用避免拷贝，大结构体更快 |
+| 默认排序 | 对内置类型 `sort(v.begin(), v.end())` 就是升序 |
+| 部分排序 | 传子区间即可，如 `sort(edges.begin()+1, edges.end())` |
+| 稳定性 | 需要稳定排序（相等保持原顺序）用 `stable_sort` |
+
+> 口诀：**sort 两参默认升序，三参自定义；返回 true 表示"a 在前"，升序写 <、降序写 >。**

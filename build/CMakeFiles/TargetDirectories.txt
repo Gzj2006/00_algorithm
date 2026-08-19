@@ -14,5 +14,6 @@ D:/00_algorithm/build/CMakeFiles/graph_05_uf_able_path.dir
 D:/00_algorithm/build/CMakeFiles/graph_06_uf_redundant_edge.dir
 D:/00_algorithm/build/CMakeFiles/graph_07_uf_dir_redundant_edge.dir
 D:/00_algorithm/build/CMakeFiles/graph_08_creTree_prim.dir
+D:/00_algorithm/build/CMakeFiles/graph_09_kruskal.dir
 D:/00_algorithm/build/CMakeFiles/edit_cache.dir
 D:/00_algorithm/build/CMakeFiles/rebuild_cache.dir

@@ -78,6 +78,7 @@ all: CMakeFiles/graph_05_uf_able_path.dir/all
 all: CMakeFiles/graph_06_uf_redundant_edge.dir/all
 all: CMakeFiles/graph_07_uf_dir_redundant_edge.dir/all
 all: CMakeFiles/graph_08_creTree_prim.dir/all
+all: CMakeFiles/graph_09_kruskal.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
@@ -97,6 +98,7 @@ codegen: CMakeFiles/graph_05_uf_able_path.dir/codegen
 codegen: CMakeFiles/graph_06_uf_redundant_edge.dir/codegen
 codegen: CMakeFiles/graph_07_uf_dir_redundant_edge.dir/codegen
 codegen: CMakeFiles/graph_08_creTree_prim.dir/codegen
+codegen: CMakeFiles/graph_09_kruskal.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -120,6 +122,7 @@ clean: CMakeFiles/graph_05_uf_able_path.dir/clean
 clean: CMakeFiles/graph_06_uf_redundant_edge.dir/clean
 clean: CMakeFiles/graph_07_uf_dir_redundant_edge.dir/clean
 clean: CMakeFiles/graph_08_creTree_prim.dir/clean
+clean: CMakeFiles/graph_09_kruskal.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -633,6 +636,38 @@ CMakeFiles/graph_08_creTree_prim.dir/codegen:
 CMakeFiles/graph_08_creTree_prim.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_08_creTree_prim.dir\build.make CMakeFiles/graph_08_creTree_prim.dir/clean
 .PHONY : CMakeFiles/graph_08_creTree_prim.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/graph_09_kruskal.dir
+
+# All Build rule for target.
+CMakeFiles/graph_09_kruskal.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_09_kruskal.dir\build.make CMakeFiles/graph_09_kruskal.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_09_kruskal.dir\build.make CMakeFiles/graph_09_kruskal.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\00_algorithm\build\CMakeFiles --progress-num=33,34 "Built target graph_09_kruskal"
+.PHONY : CMakeFiles/graph_09_kruskal.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/graph_09_kruskal.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\00_algorithm\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/graph_09_kruskal.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\00_algorithm\build\CMakeFiles 0
+.PHONY : CMakeFiles/graph_09_kruskal.dir/rule
+
+# Convenience name for target.
+graph_09_kruskal: CMakeFiles/graph_09_kruskal.dir/rule
+.PHONY : graph_09_kruskal
+
+# codegen rule for target.
+CMakeFiles/graph_09_kruskal.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_09_kruskal.dir\build.make CMakeFiles/graph_09_kruskal.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\00_algorithm\build\CMakeFiles --progress-num=33,34 "Finished codegen for target graph_09_kruskal"
+.PHONY : CMakeFiles/graph_09_kruskal.dir/codegen
+
+# clean rule for target.
+CMakeFiles/graph_09_kruskal.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_09_kruskal.dir\build.make CMakeFiles/graph_09_kruskal.dir/clean
+.PHONY : CMakeFiles/graph_09_kruskal.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
