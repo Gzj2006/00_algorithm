@@ -337,6 +337,45 @@ graph_09_kruskal/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_09_kruskal.dir\build.make CMakeFiles/graph_09_kruskal.dir/build
 .PHONY : graph_09_kruskal/fast
 
+#=============================================================================
+# Target rules for targets named graph_10_topo_sort
+
+# Build rule for target.
+graph_10_topo_sort: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 graph_10_topo_sort
+.PHONY : graph_10_topo_sort
+
+# fast build rule for target.
+graph_10_topo_sort/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_10_topo_sort.dir\build.make CMakeFiles/graph_10_topo_sort.dir/build
+.PHONY : graph_10_topo_sort/fast
+
+#=============================================================================
+# Target rules for targets named graph_11_dijkstra
+
+# Build rule for target.
+graph_11_dijkstra: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 graph_11_dijkstra
+.PHONY : graph_11_dijkstra
+
+# fast build rule for target.
+graph_11_dijkstra/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_11_dijkstra.dir\build.make CMakeFiles/graph_11_dijkstra.dir/build
+.PHONY : graph_11_dijkstra/fast
+
+#=============================================================================
+# Target rules for targets named graph_12_dijkstra_heap
+
+# Build rule for target.
+graph_12_dijkstra_heap: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 graph_12_dijkstra_heap
+.PHONY : graph_12_dijkstra_heap
+
+# fast build rule for target.
+graph_12_dijkstra_heap/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_12_dijkstra_heap.dir\build.make CMakeFiles/graph_12_dijkstra_heap.dir/build
+.PHONY : graph_12_dijkstra_heap/fast
+
 graph/01_dfs_able_path.obj: graph/01_dfs_able_path.cpp.obj
 .PHONY : graph/01_dfs_able_path.obj
 
@@ -745,6 +784,78 @@ graph/09_kruskal.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_09_kruskal.dir\build.make CMakeFiles/graph_09_kruskal.dir/graph/09_kruskal.cpp.s
 .PHONY : graph/09_kruskal.cpp.s
 
+graph/10_topo_sort.obj: graph/10_topo_sort.cpp.obj
+.PHONY : graph/10_topo_sort.obj
+
+# target to build an object file
+graph/10_topo_sort.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_10_topo_sort.dir\build.make CMakeFiles/graph_10_topo_sort.dir/graph/10_topo_sort.cpp.obj
+.PHONY : graph/10_topo_sort.cpp.obj
+
+graph/10_topo_sort.i: graph/10_topo_sort.cpp.i
+.PHONY : graph/10_topo_sort.i
+
+# target to preprocess a source file
+graph/10_topo_sort.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_10_topo_sort.dir\build.make CMakeFiles/graph_10_topo_sort.dir/graph/10_topo_sort.cpp.i
+.PHONY : graph/10_topo_sort.cpp.i
+
+graph/10_topo_sort.s: graph/10_topo_sort.cpp.s
+.PHONY : graph/10_topo_sort.s
+
+# target to generate assembly for a file
+graph/10_topo_sort.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_10_topo_sort.dir\build.make CMakeFiles/graph_10_topo_sort.dir/graph/10_topo_sort.cpp.s
+.PHONY : graph/10_topo_sort.cpp.s
+
+graph/11_dijkstra.obj: graph/11_dijkstra.cpp.obj
+.PHONY : graph/11_dijkstra.obj
+
+# target to build an object file
+graph/11_dijkstra.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_11_dijkstra.dir\build.make CMakeFiles/graph_11_dijkstra.dir/graph/11_dijkstra.cpp.obj
+.PHONY : graph/11_dijkstra.cpp.obj
+
+graph/11_dijkstra.i: graph/11_dijkstra.cpp.i
+.PHONY : graph/11_dijkstra.i
+
+# target to preprocess a source file
+graph/11_dijkstra.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_11_dijkstra.dir\build.make CMakeFiles/graph_11_dijkstra.dir/graph/11_dijkstra.cpp.i
+.PHONY : graph/11_dijkstra.cpp.i
+
+graph/11_dijkstra.s: graph/11_dijkstra.cpp.s
+.PHONY : graph/11_dijkstra.s
+
+# target to generate assembly for a file
+graph/11_dijkstra.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_11_dijkstra.dir\build.make CMakeFiles/graph_11_dijkstra.dir/graph/11_dijkstra.cpp.s
+.PHONY : graph/11_dijkstra.cpp.s
+
+graph/12_dijkstra_heap.obj: graph/12_dijkstra_heap.cpp.obj
+.PHONY : graph/12_dijkstra_heap.obj
+
+# target to build an object file
+graph/12_dijkstra_heap.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_12_dijkstra_heap.dir\build.make CMakeFiles/graph_12_dijkstra_heap.dir/graph/12_dijkstra_heap.cpp.obj
+.PHONY : graph/12_dijkstra_heap.cpp.obj
+
+graph/12_dijkstra_heap.i: graph/12_dijkstra_heap.cpp.i
+.PHONY : graph/12_dijkstra_heap.i
+
+# target to preprocess a source file
+graph/12_dijkstra_heap.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_12_dijkstra_heap.dir\build.make CMakeFiles/graph_12_dijkstra_heap.dir/graph/12_dijkstra_heap.cpp.i
+.PHONY : graph/12_dijkstra_heap.cpp.i
+
+graph/12_dijkstra_heap.s: graph/12_dijkstra_heap.cpp.s
+.PHONY : graph/12_dijkstra_heap.s
+
+# target to generate assembly for a file
+graph/12_dijkstra_heap.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_12_dijkstra_heap.dir\build.make CMakeFiles/graph_12_dijkstra_heap.dir/graph/12_dijkstra_heap.cpp.s
+.PHONY : graph/12_dijkstra_heap.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -770,6 +881,9 @@ help:
 	@echo ... graph_07_uf_dir_redundant_edge
 	@echo ... graph_08_creTree_prim
 	@echo ... graph_09_kruskal
+	@echo ... graph_10_topo_sort
+	@echo ... graph_11_dijkstra
+	@echo ... graph_12_dijkstra_heap
 	@echo ... graph/01_dfs_able_path.obj
 	@echo ... graph/01_dfs_able_path.i
 	@echo ... graph/01_dfs_able_path.s
@@ -821,6 +935,15 @@ help:
 	@echo ... graph/09_kruskal.obj
 	@echo ... graph/09_kruskal.i
 	@echo ... graph/09_kruskal.s
+	@echo ... graph/10_topo_sort.obj
+	@echo ... graph/10_topo_sort.i
+	@echo ... graph/10_topo_sort.s
+	@echo ... graph/11_dijkstra.obj
+	@echo ... graph/11_dijkstra.i
+	@echo ... graph/11_dijkstra.s
+	@echo ... graph/12_dijkstra_heap.obj
+	@echo ... graph/12_dijkstra_heap.i
+	@echo ... graph/12_dijkstra_heap.s
 .PHONY : help
 
 

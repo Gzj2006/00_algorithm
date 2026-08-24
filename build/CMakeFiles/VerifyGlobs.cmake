@@ -21,6 +21,9 @@ set(OLD_GLOB
   "D:/00_algorithm/graph/07_uf_dir_redundant_edge.cpp"
   "D:/00_algorithm/graph/08_creTree_prim.cpp"
   "D:/00_algorithm/graph/09_kruskal.cpp"
+  "D:/00_algorithm/graph/10_topo_sort.cpp"
+  "D:/00_algorithm/graph/11_dijkstra.cpp"
+  "D:/00_algorithm/graph/12_dijkstra_heap.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")

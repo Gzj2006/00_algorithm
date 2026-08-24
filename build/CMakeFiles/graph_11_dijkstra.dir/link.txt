@@ -1,0 +1,3 @@
+C:\msys64\ucrt64\bin\cmake.exe -E rm -f CMakeFiles\graph_11_dijkstra.dir/objects.a
+C:\msys64\ucrt64\bin\ar.exe qc CMakeFiles\graph_11_dijkstra.dir/objects.a @CMakeFiles\graph_11_dijkstra.dir\objects1.rsp
+C:\msys64\ucrt64\bin\c++.exe -g -Wl,--whole-archive CMakeFiles\graph_11_dijkstra.dir/objects.a -Wl,--no-whole-archive -o graph_11_dijkstra.exe -Wl,--out-implib,libgraph_11_dijkstra.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\graph_11_dijkstra.dir\linkLibs.rsp

@@ -79,6 +79,9 @@ all: CMakeFiles/graph_06_uf_redundant_edge.dir/all
 all: CMakeFiles/graph_07_uf_dir_redundant_edge.dir/all
 all: CMakeFiles/graph_08_creTree_prim.dir/all
 all: CMakeFiles/graph_09_kruskal.dir/all
+all: CMakeFiles/graph_10_topo_sort.dir/all
+all: CMakeFiles/graph_11_dijkstra.dir/all
+all: CMakeFiles/graph_12_dijkstra_heap.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
@@ -99,6 +102,9 @@ codegen: CMakeFiles/graph_06_uf_redundant_edge.dir/codegen
 codegen: CMakeFiles/graph_07_uf_dir_redundant_edge.dir/codegen
 codegen: CMakeFiles/graph_08_creTree_prim.dir/codegen
 codegen: CMakeFiles/graph_09_kruskal.dir/codegen
+codegen: CMakeFiles/graph_10_topo_sort.dir/codegen
+codegen: CMakeFiles/graph_11_dijkstra.dir/codegen
+codegen: CMakeFiles/graph_12_dijkstra_heap.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -123,6 +129,9 @@ clean: CMakeFiles/graph_06_uf_redundant_edge.dir/clean
 clean: CMakeFiles/graph_07_uf_dir_redundant_edge.dir/clean
 clean: CMakeFiles/graph_08_creTree_prim.dir/clean
 clean: CMakeFiles/graph_09_kruskal.dir/clean
+clean: CMakeFiles/graph_10_topo_sort.dir/clean
+clean: CMakeFiles/graph_11_dijkstra.dir/clean
+clean: CMakeFiles/graph_12_dijkstra_heap.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -668,6 +677,102 @@ CMakeFiles/graph_09_kruskal.dir/codegen:
 CMakeFiles/graph_09_kruskal.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_09_kruskal.dir\build.make CMakeFiles/graph_09_kruskal.dir/clean
 .PHONY : CMakeFiles/graph_09_kruskal.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/graph_10_topo_sort.dir
+
+# All Build rule for target.
+CMakeFiles/graph_10_topo_sort.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_10_topo_sort.dir\build.make CMakeFiles/graph_10_topo_sort.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_10_topo_sort.dir\build.make CMakeFiles/graph_10_topo_sort.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\00_algorithm\build\CMakeFiles --progress-num=35,36 "Built target graph_10_topo_sort"
+.PHONY : CMakeFiles/graph_10_topo_sort.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/graph_10_topo_sort.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\00_algorithm\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/graph_10_topo_sort.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\00_algorithm\build\CMakeFiles 0
+.PHONY : CMakeFiles/graph_10_topo_sort.dir/rule
+
+# Convenience name for target.
+graph_10_topo_sort: CMakeFiles/graph_10_topo_sort.dir/rule
+.PHONY : graph_10_topo_sort
+
+# codegen rule for target.
+CMakeFiles/graph_10_topo_sort.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_10_topo_sort.dir\build.make CMakeFiles/graph_10_topo_sort.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\00_algorithm\build\CMakeFiles --progress-num=35,36 "Finished codegen for target graph_10_topo_sort"
+.PHONY : CMakeFiles/graph_10_topo_sort.dir/codegen
+
+# clean rule for target.
+CMakeFiles/graph_10_topo_sort.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_10_topo_sort.dir\build.make CMakeFiles/graph_10_topo_sort.dir/clean
+.PHONY : CMakeFiles/graph_10_topo_sort.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/graph_11_dijkstra.dir
+
+# All Build rule for target.
+CMakeFiles/graph_11_dijkstra.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_11_dijkstra.dir\build.make CMakeFiles/graph_11_dijkstra.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_11_dijkstra.dir\build.make CMakeFiles/graph_11_dijkstra.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\00_algorithm\build\CMakeFiles --progress-num=37,38 "Built target graph_11_dijkstra"
+.PHONY : CMakeFiles/graph_11_dijkstra.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/graph_11_dijkstra.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\00_algorithm\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/graph_11_dijkstra.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\00_algorithm\build\CMakeFiles 0
+.PHONY : CMakeFiles/graph_11_dijkstra.dir/rule
+
+# Convenience name for target.
+graph_11_dijkstra: CMakeFiles/graph_11_dijkstra.dir/rule
+.PHONY : graph_11_dijkstra
+
+# codegen rule for target.
+CMakeFiles/graph_11_dijkstra.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_11_dijkstra.dir\build.make CMakeFiles/graph_11_dijkstra.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\00_algorithm\build\CMakeFiles --progress-num=37,38 "Finished codegen for target graph_11_dijkstra"
+.PHONY : CMakeFiles/graph_11_dijkstra.dir/codegen
+
+# clean rule for target.
+CMakeFiles/graph_11_dijkstra.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_11_dijkstra.dir\build.make CMakeFiles/graph_11_dijkstra.dir/clean
+.PHONY : CMakeFiles/graph_11_dijkstra.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/graph_12_dijkstra_heap.dir
+
+# All Build rule for target.
+CMakeFiles/graph_12_dijkstra_heap.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_12_dijkstra_heap.dir\build.make CMakeFiles/graph_12_dijkstra_heap.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_12_dijkstra_heap.dir\build.make CMakeFiles/graph_12_dijkstra_heap.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\00_algorithm\build\CMakeFiles --progress-num=39,40 "Built target graph_12_dijkstra_heap"
+.PHONY : CMakeFiles/graph_12_dijkstra_heap.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/graph_12_dijkstra_heap.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\00_algorithm\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/graph_12_dijkstra_heap.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\00_algorithm\build\CMakeFiles 0
+.PHONY : CMakeFiles/graph_12_dijkstra_heap.dir/rule
+
+# Convenience name for target.
+graph_12_dijkstra_heap: CMakeFiles/graph_12_dijkstra_heap.dir/rule
+.PHONY : graph_12_dijkstra_heap
+
+# codegen rule for target.
+CMakeFiles/graph_12_dijkstra_heap.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_12_dijkstra_heap.dir\build.make CMakeFiles/graph_12_dijkstra_heap.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\00_algorithm\build\CMakeFiles --progress-num=39,40 "Finished codegen for target graph_12_dijkstra_heap"
+.PHONY : CMakeFiles/graph_12_dijkstra_heap.dir/codegen
+
+# clean rule for target.
+CMakeFiles/graph_12_dijkstra_heap.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_12_dijkstra_heap.dir\build.make CMakeFiles/graph_12_dijkstra_heap.dir/clean
+.PHONY : CMakeFiles/graph_12_dijkstra_heap.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
