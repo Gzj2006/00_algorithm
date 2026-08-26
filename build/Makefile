@@ -389,6 +389,32 @@ graph_13_Bellman_ford/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_13_Bellman_ford.dir\build.make CMakeFiles/graph_13_Bellman_ford.dir/build
 .PHONY : graph_13_Bellman_ford/fast
 
+#=============================================================================
+# Target rules for targets named graph_14_SPFA
+
+# Build rule for target.
+graph_14_SPFA: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 graph_14_SPFA
+.PHONY : graph_14_SPFA
+
+# fast build rule for target.
+graph_14_SPFA/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_14_SPFA.dir\build.make CMakeFiles/graph_14_SPFA.dir/build
+.PHONY : graph_14_SPFA/fast
+
+#=============================================================================
+# Target rules for targets named graph_15_Bellman_neg_cycle
+
+# Build rule for target.
+graph_15_Bellman_neg_cycle: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 graph_15_Bellman_neg_cycle
+.PHONY : graph_15_Bellman_neg_cycle
+
+# fast build rule for target.
+graph_15_Bellman_neg_cycle/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_15_Bellman_neg_cycle.dir\build.make CMakeFiles/graph_15_Bellman_neg_cycle.dir/build
+.PHONY : graph_15_Bellman_neg_cycle/fast
+
 graph/01_dfs_able_path.obj: graph/01_dfs_able_path.cpp.obj
 .PHONY : graph/01_dfs_able_path.obj
 
@@ -893,6 +919,54 @@ graph/13_Bellman_ford.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_13_Bellman_ford.dir\build.make CMakeFiles/graph_13_Bellman_ford.dir/graph/13_Bellman_ford.cpp.s
 .PHONY : graph/13_Bellman_ford.cpp.s
 
+graph/14_SPFA.obj: graph/14_SPFA.cpp.obj
+.PHONY : graph/14_SPFA.obj
+
+# target to build an object file
+graph/14_SPFA.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_14_SPFA.dir\build.make CMakeFiles/graph_14_SPFA.dir/graph/14_SPFA.cpp.obj
+.PHONY : graph/14_SPFA.cpp.obj
+
+graph/14_SPFA.i: graph/14_SPFA.cpp.i
+.PHONY : graph/14_SPFA.i
+
+# target to preprocess a source file
+graph/14_SPFA.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_14_SPFA.dir\build.make CMakeFiles/graph_14_SPFA.dir/graph/14_SPFA.cpp.i
+.PHONY : graph/14_SPFA.cpp.i
+
+graph/14_SPFA.s: graph/14_SPFA.cpp.s
+.PHONY : graph/14_SPFA.s
+
+# target to generate assembly for a file
+graph/14_SPFA.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_14_SPFA.dir\build.make CMakeFiles/graph_14_SPFA.dir/graph/14_SPFA.cpp.s
+.PHONY : graph/14_SPFA.cpp.s
+
+graph/15_Bellman_neg_cycle.obj: graph/15_Bellman_neg_cycle.cpp.obj
+.PHONY : graph/15_Bellman_neg_cycle.obj
+
+# target to build an object file
+graph/15_Bellman_neg_cycle.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_15_Bellman_neg_cycle.dir\build.make CMakeFiles/graph_15_Bellman_neg_cycle.dir/graph/15_Bellman_neg_cycle.cpp.obj
+.PHONY : graph/15_Bellman_neg_cycle.cpp.obj
+
+graph/15_Bellman_neg_cycle.i: graph/15_Bellman_neg_cycle.cpp.i
+.PHONY : graph/15_Bellman_neg_cycle.i
+
+# target to preprocess a source file
+graph/15_Bellman_neg_cycle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_15_Bellman_neg_cycle.dir\build.make CMakeFiles/graph_15_Bellman_neg_cycle.dir/graph/15_Bellman_neg_cycle.cpp.i
+.PHONY : graph/15_Bellman_neg_cycle.cpp.i
+
+graph/15_Bellman_neg_cycle.s: graph/15_Bellman_neg_cycle.cpp.s
+.PHONY : graph/15_Bellman_neg_cycle.s
+
+# target to generate assembly for a file
+graph/15_Bellman_neg_cycle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_15_Bellman_neg_cycle.dir\build.make CMakeFiles/graph_15_Bellman_neg_cycle.dir/graph/15_Bellman_neg_cycle.cpp.s
+.PHONY : graph/15_Bellman_neg_cycle.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -922,6 +996,8 @@ help:
 	@echo ... graph_11_dijkstra
 	@echo ... graph_12_dijkstra_heap
 	@echo ... graph_13_Bellman_ford
+	@echo ... graph_14_SPFA
+	@echo ... graph_15_Bellman_neg_cycle
 	@echo ... graph/01_dfs_able_path.obj
 	@echo ... graph/01_dfs_able_path.i
 	@echo ... graph/01_dfs_able_path.s
@@ -985,6 +1061,12 @@ help:
 	@echo ... graph/13_Bellman_ford.obj
 	@echo ... graph/13_Bellman_ford.i
 	@echo ... graph/13_Bellman_ford.s
+	@echo ... graph/14_SPFA.obj
+	@echo ... graph/14_SPFA.i
+	@echo ... graph/14_SPFA.s
+	@echo ... graph/15_Bellman_neg_cycle.obj
+	@echo ... graph/15_Bellman_neg_cycle.i
+	@echo ... graph/15_Bellman_neg_cycle.s
 .PHONY : help
 
 

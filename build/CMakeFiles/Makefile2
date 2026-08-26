@@ -83,6 +83,8 @@ all: CMakeFiles/graph_10_topo_sort.dir/all
 all: CMakeFiles/graph_11_dijkstra.dir/all
 all: CMakeFiles/graph_12_dijkstra_heap.dir/all
 all: CMakeFiles/graph_13_Bellman_ford.dir/all
+all: CMakeFiles/graph_14_SPFA.dir/all
+all: CMakeFiles/graph_15_Bellman_neg_cycle.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
@@ -107,6 +109,8 @@ codegen: CMakeFiles/graph_10_topo_sort.dir/codegen
 codegen: CMakeFiles/graph_11_dijkstra.dir/codegen
 codegen: CMakeFiles/graph_12_dijkstra_heap.dir/codegen
 codegen: CMakeFiles/graph_13_Bellman_ford.dir/codegen
+codegen: CMakeFiles/graph_14_SPFA.dir/codegen
+codegen: CMakeFiles/graph_15_Bellman_neg_cycle.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -135,6 +139,8 @@ clean: CMakeFiles/graph_10_topo_sort.dir/clean
 clean: CMakeFiles/graph_11_dijkstra.dir/clean
 clean: CMakeFiles/graph_12_dijkstra_heap.dir/clean
 clean: CMakeFiles/graph_13_Bellman_ford.dir/clean
+clean: CMakeFiles/graph_14_SPFA.dir/clean
+clean: CMakeFiles/graph_15_Bellman_neg_cycle.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -808,6 +814,70 @@ CMakeFiles/graph_13_Bellman_ford.dir/codegen:
 CMakeFiles/graph_13_Bellman_ford.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_13_Bellman_ford.dir\build.make CMakeFiles/graph_13_Bellman_ford.dir/clean
 .PHONY : CMakeFiles/graph_13_Bellman_ford.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/graph_14_SPFA.dir
+
+# All Build rule for target.
+CMakeFiles/graph_14_SPFA.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_14_SPFA.dir\build.make CMakeFiles/graph_14_SPFA.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_14_SPFA.dir\build.make CMakeFiles/graph_14_SPFA.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\00_algorithm\build\CMakeFiles --progress-num=43,44 "Built target graph_14_SPFA"
+.PHONY : CMakeFiles/graph_14_SPFA.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/graph_14_SPFA.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\00_algorithm\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/graph_14_SPFA.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\00_algorithm\build\CMakeFiles 0
+.PHONY : CMakeFiles/graph_14_SPFA.dir/rule
+
+# Convenience name for target.
+graph_14_SPFA: CMakeFiles/graph_14_SPFA.dir/rule
+.PHONY : graph_14_SPFA
+
+# codegen rule for target.
+CMakeFiles/graph_14_SPFA.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_14_SPFA.dir\build.make CMakeFiles/graph_14_SPFA.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\00_algorithm\build\CMakeFiles --progress-num=43,44 "Finished codegen for target graph_14_SPFA"
+.PHONY : CMakeFiles/graph_14_SPFA.dir/codegen
+
+# clean rule for target.
+CMakeFiles/graph_14_SPFA.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_14_SPFA.dir\build.make CMakeFiles/graph_14_SPFA.dir/clean
+.PHONY : CMakeFiles/graph_14_SPFA.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/graph_15_Bellman_neg_cycle.dir
+
+# All Build rule for target.
+CMakeFiles/graph_15_Bellman_neg_cycle.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_15_Bellman_neg_cycle.dir\build.make CMakeFiles/graph_15_Bellman_neg_cycle.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_15_Bellman_neg_cycle.dir\build.make CMakeFiles/graph_15_Bellman_neg_cycle.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\00_algorithm\build\CMakeFiles --progress-num=45,46 "Built target graph_15_Bellman_neg_cycle"
+.PHONY : CMakeFiles/graph_15_Bellman_neg_cycle.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/graph_15_Bellman_neg_cycle.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\00_algorithm\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/graph_15_Bellman_neg_cycle.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\00_algorithm\build\CMakeFiles 0
+.PHONY : CMakeFiles/graph_15_Bellman_neg_cycle.dir/rule
+
+# Convenience name for target.
+graph_15_Bellman_neg_cycle: CMakeFiles/graph_15_Bellman_neg_cycle.dir/rule
+.PHONY : graph_15_Bellman_neg_cycle
+
+# codegen rule for target.
+CMakeFiles/graph_15_Bellman_neg_cycle.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_15_Bellman_neg_cycle.dir\build.make CMakeFiles/graph_15_Bellman_neg_cycle.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\00_algorithm\build\CMakeFiles --progress-num=45,46 "Finished codegen for target graph_15_Bellman_neg_cycle"
+.PHONY : CMakeFiles/graph_15_Bellman_neg_cycle.dir/codegen
+
+# clean rule for target.
+CMakeFiles/graph_15_Bellman_neg_cycle.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_15_Bellman_neg_cycle.dir\build.make CMakeFiles/graph_15_Bellman_neg_cycle.dir/clean
+.PHONY : CMakeFiles/graph_15_Bellman_neg_cycle.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
