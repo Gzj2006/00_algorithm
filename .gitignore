@@ -1,2 +1,31 @@
+# ===== 只跟踪源码类文件（*.cmake / *.cpp / *.md / CMakeLists.txt）=====
+
+# 1) 通用忽略项
 *.exe
-*.json
+*.obj
+*.o
+*.a
+*.lib
+*.dll
+*.so
+*.dylib
+*.pdb
+*.ilk
+*.rsp
+*.make
+*~
+*.swp
+.DS_Store
+Thumbs.db
+
+# 2) 白名单：默认忽略所有，仅放行以下类型（!*/ 用于进入子目录）
+*
+!*/
+!*.cmake
+!*.cpp
+!*.md
+!CMakeLists.txt
+!.gitignore
+
+# 3) 构建产物目录整体忽略（放在最后，覆盖上面的 !*/）
+build/
