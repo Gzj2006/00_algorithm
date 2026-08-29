@@ -1,3 +1,0 @@
-C:\msys64\ucrt64\bin\cmake.exe -E rm -f CMakeFiles\graph_13_Bellman_ford.dir/objects.a
-C:\msys64\ucrt64\bin\ar.exe qc CMakeFiles\graph_13_Bellman_ford.dir/objects.a @CMakeFiles\graph_13_Bellman_ford.dir\objects1.rsp
-C:\msys64\ucrt64\bin\c++.exe -g -Wl,--whole-archive CMakeFiles\graph_13_Bellman_ford.dir/objects.a -Wl,--no-whole-archive -o graph_13_Bellman_ford.exe -Wl,--out-implib,libgraph_13_Bellman_ford.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\graph_13_Bellman_ford.dir\linkLibs.rsp
