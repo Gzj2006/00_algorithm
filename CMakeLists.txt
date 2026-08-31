@@ -14,9 +14,10 @@ endif()
 # 跨平台通用警告选项
 add_compile_options(-Wall -Wextra)
 
-# 递归收集 graph/ 下所有 .cpp（排除 build 目录）
+# 递归收集 graph/、Monotonic_Stack/ 下所有 .cpp（排除 build 目录）
 file(GLOB_RECURSE ALGO_SOURCES CONFIGURE_DEPENDS
   "${CMAKE_CURRENT_SOURCE_DIR}/graph/*.cpp"
+  "${CMAKE_CURRENT_SOURCE_DIR}/Monotonic_Stack/*.cpp"
 )
 list(FILTER ALGO_SOURCES EXCLUDE REGEX ".*[/\\\\]build[/\\\\].*")
 
@@ -30,6 +31,8 @@ foreach(src IN LISTS ALGO_SOURCES)
   get_filename_component(parent_dir "${src_dir}" NAME)
   get_filename_component(file_name "${src}" NAME_WE)
   set(target "${parent_dir}_${file_name}")
+  # 目录名可能含空格等非法字符，替换为下划线
+  string(REPLACE " " "_" target "${target}")
   add_executable("${target}" "${src}")
   message(STATUS "添加目标: ${target}  <-  ${src}")
 endforeach()
