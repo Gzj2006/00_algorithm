@@ -14,10 +14,11 @@ endif()
 # 跨平台通用警告选项
 add_compile_options(-Wall -Wextra)
 
-# 递归收集 graph/、Monotonic_Stack/ 下所有 .cpp（排除 build 目录）
+# 递归收集 graph/、Monotonic_Stack/、DP/ 下所有 .cpp（排除 build 目录）
 file(GLOB_RECURSE ALGO_SOURCES CONFIGURE_DEPENDS
   "${CMAKE_CURRENT_SOURCE_DIR}/graph/*.cpp"
   "${CMAKE_CURRENT_SOURCE_DIR}/Monotonic_Stack/*.cpp"
+  "${CMAKE_CURRENT_SOURCE_DIR}/DP/*.cpp"
 )
 list(FILTER ALGO_SOURCES EXCLUDE REGEX ".*[/\\\\]build[/\\\\].*")
 
